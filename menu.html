@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style media="screen">
+  h1 {
+      text-shadow:none;
+      font-size: 5vw;
+      font-weight: 900;
+      text-decoration: none;
+  }
+
+    h2{
+    text-shadow: none;
+    text-decoration-line: none;
+  }
+
+  h3{
+    text-shadow:none;
+    font-size: 2vw;
+    font-weight: 450;
+    text-decoration: none;
+  }
+  body{
+    background-color:white;
+    margin:0;
+  }
+* {
+    box-sizing: border-box;
+    border-color: black;
+    border-width: medium;
+
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+    border: 5px;
+}
+/* Middle column */
+.column.middle {
+    width: 75%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+.center {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid white;
+    float: left;
+    width: 160px;
+    height: auto;
+}
+
+div.gallery:hover {
+    border: 5px solid red;
+}
+
+div.gallery img {
+    width: 150px;
+    height: 150px;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+  body{
+                   background-image: url(b4.jpg);
+                  background-repeat:no-repeat;
+                  background-position:center bottom;
+                  margin-right: 200px;
+                  background-size: 1366px 768px;
+                   background-attachment: fixed;
+}
+
+
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <h1><center>MeNu</center></h1>
+   
+    <div class="row">
+      <div class="column side">
+        
+      <p> </p>
+      <hr>
+        <h2></h2>
+        
+        
+              
+              <hr>
+              <hr>
+              
+               <hr>
+              
+                    <hr>
+                    <h2> VEG </h2>
+                    
+                    
+ 
+<br><br>
+
+
+                     <hr>
+            </div>
+        <div class="column middle">
+      <center>  <h2 id="religious"></h2> </center>
+        <hr>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="dal.jpg" alt="dal">
+          </a>
+          <div class="desc">GHAR KI<BR>DaL</div>
+
+          <center><div class="btn btn-info" id="demo" onclick="myFunction()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">Order</div></center>
+        </div>
+        <script>
+        function myFunction() {
+        document.getElementById("demo").style.color = "red";
+        }
+        </script>
+
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="veg.jpg" alt="veg">
+          </a>
+          <div class="desc">VEG NUGGET </div>
+          <center><div class="btn btn-info" id="demo1" onclick="myFunction1()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">ORDER</div></center>
+        </div>
+        <script>
+        function myFunction1() {
+        document.getElementById("demo1").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="sabzi.jpg" alt="SABJI">
+          </a>
+          <div class="desc">SABJI<br> BOWL</div>
+          <center><div class="btn btn-info" id="demo2" onclick="myFunction2()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">ORDER</div></center>
+          <button onclick="getElementById('demo.html').innerHTML=Date()"></button>
+
+        </div>
+        <script>
+        function myFunction2() {
+        document.getElementById("demo2").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="dosa.jpg" alt="Masala Dosa">
+          </a>
+          <div class="desc">Masala <br> DOSA</div>
+          <center><div class="btn btn-info" id="demo3" onclick="myFunction3()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">ORDER</div></center>
+          </div>
+          <script>
+          function myFunction3() {
+          document.getElementById("demo3").style.color = "red";
+          }
+          </script>
+      </div>
+      <div class="column middle">
+<center> <h2 id="history">NON-VEG</h2> </center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="chick2.jpg" alt="Chicken">
+  </a>
+  <div class="desc">CHICKEN<br> WITH GRAVY</div>
+  <center><div class="btn btn-info" id="demo4" onclick="myFunction4()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction4() {
+document.getElementById("demo4").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="fish.jpg" alt="Fried Fish">
+  </a>
+  <div class="desc">FRIED<br> FISH</div>
+  <center><div class="btn btn-info" id="demo5" onclick="myFunction5()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+  </div>
+  <script>
+  function myFunction5() {
+  document.getElementById("demo5").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="mutton.jpg" alt="Mutton Korma">
+  </a>
+  <div class="desc">MUTTON<br>KORMA</div>
+  <center><div class="btn btn-info" id="demo6" onclick="myFunction6()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+  </div>
+  <script>
+  function myFunction6() {
+  document.getElementById("demo6").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="biryani.jpg" alt="Biryani">
+  </a>
+  <div class="desc">CHICKEN<br> BIRYANI</div>
+  <center><div class="btn btn-info" id="demo7" onclick="myFunction7()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction7() {
+document.getElementById("demo7").style.color = "red";
+}
+</script>
+</div>
+
+<div class="column middle" style="float:right">
+
+<center><h2 id="museums">CONTINENTAL</h2></center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="pizza.jpg" alt="pizza">
+  </a>
+  <div class="desc">THIN CRUST <br>PIZZA</div>
+  <center><div class="btn btn-info" id="demo8" onclick="myFunction8()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction8() {
+document.getElementById("demo8").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="pasta.jpg" alt="Pasta">
+  </a>
+  <div class="desc">Italian <br>Saucy<br> Psta</div>
+  <center><div class="btn btn-info" id="demo9" onclick="myFunction9()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction9() {
+document.getElementById("demo9").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="sushi.jpg" alt="SUSHI" height="250px;">
+  </a>
+  <div class="desc">SUSHI PLATTER</div>
+  <center><div class="btn btn-info" id="demo10" onclick="myFunction10()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction10() {
+document.getElementById("demo10").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="noodles.jpg" alt="Noodles" height="400px;">
+  </a>
+  <div class="desc">CHINESE NOODLES</div>
+  <center><div class="btn btn-info" id="demo11" onclick="myFunction11()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">ORDER</div></center>
+</div>
+<script>
+function myFunction11() {
+document.getElementById("demo11").style.color = "red";
+}
+</script>
+</div>
+<div class="column middle" style="float:right">
+<center><h2 id="landmarks">TODAY'S SPECIAL</h2></center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="p1.jpg" alt="palak paneer">
+  </a>
+  <div class="desc">PALAK <br>PANEER  </div>
+  <center><div class="btn btn-info" id="demo12" onclick="myFunction12()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">Order</div></center>
+</div>
+<script>
+function myFunction12() {
+document.getElementById("demo12").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="p2.jpg" alt="paneer tikka">
+  </a>
+  <div class="desc">PANEER <br> TIKKA</div>
+  <center><div class="btn btn-info" id="demo13" onclick="myFunction13()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">Order</div></center>
+</div>
+<script>
+function myFunction13() {
+document.getElementById("demo13").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="p5.jpg" alt="Masala aloo">
+  </a>
+  <div class="desc">MASALA <BR>ALOO</div>
+  <center><div class="btn btn-info" id="demo14" onclick="myFunction14()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">Order</div></center>
+</div>
+<script>
+function myFunction14() {
+document.getElementById("demo14").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="p6.jpg" alt="Aloo tikki">
+  </a>
+  <div class="desc">Aloo <br>Tikki</div>
+  <center><div class="btn btn-info" id="demo15" onclick="myFunction15()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">Order</div></center>
+</div>
+<script>
+function myFunction15() {
+document.getElementById("demo15").style.color = "red";
+}
+</script>
+</div>
+</div>
+    </div>
+
+  </body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <hr>
+
+
+    <!-- footer start here -->
+    <section class="footer-agile" style="background-color:transparent;">
+    	<div class="container-fluid">
+    		<div class="footer-btm-agileinfo">
+    			<div class="col-md-3 col-xs-12 footer-grid w3social">
+    				<h3> </h3>
+    				
+    				<a href="demo.html#about">Read More <span class="fa fa-long-arrow-right"></span></a>
+    			</div>
+    			<div class="col-md-3 col-xs-12 footer-grid">
+    				<h3>Contact Info</h3>
+    				<ul>
+    					<li><i class="fa fa-phone"></i>8284848090</li>
+    					<li><i class="fa fa-fax"></i>+12 222 333 2365</li>
+    					<li><i class="fa fa-map-marker"></i>LPU, PUNJAB, 144401.</li>
+    					<li><i class="fa fa-envelope-o"></i><a href="#">raj4nandani@gmail.com</a></li>
+    					<li><i class="fa fa-globe"></i><a href="#">www.discover.com</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2 col-xs-12 footer-grid w3social">
+    				<h3>Quick Links</h3>
+    				<ul>
+    					<li><a href="demo.html">Home</a></li>
+    					<li><a href="pro1page.html#about" class="scroll">About us</a></li>
+    					<li><a href="pro1page.html#mostly" class="scroll">Mostly Ordered</a></li>
+    					<li><a href="pro1page.html#reg" class="scroll">Register</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4 col-xs-12 footer-grid">
+    				<h3>Latest Tweets</h3>
+    				<ul class="tweet-agile">
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@tweetyTalker</a> Easy to discover the places.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@xyz</a> User friendly interface.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    			</ul>
+    			</div>
+    			<div class="clearfix"> </div>
+    		</div>
+    		<div class="footer-agilem">
+    			<div class="col-sm-8 col-xs-9 copy-w3lsright">
+    				<p>© 2018 Discover. All rights reserved </a></p>
+    			</div>
+
+    			<div class="col-sm-4 col-xs-6 social-w3licon" style="float:right" style="font-Size:2vw;">
+    				<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+    				<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+    				<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+    				<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+    			</div>
+
+    			<div class="clearfix"></div>
+    		</div>
+    	</div>
+    </section>
+</html>
